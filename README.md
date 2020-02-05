@@ -1,5 +1,5 @@
 # Network segregation
-An agent-based model of segregation in social networks.
+An agent-based model of segregation in social networks. A report that outlines the model and results can be found at: 
 
 ## Contents
 * toy_model.py: A basic version of the model with a network visualization at every step. There are blue, red, and green agents. Choose parameters and run. Self-contained.
