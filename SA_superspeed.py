@@ -39,5 +39,5 @@ if __name__ == '__main__':
     p.close()
     p.join()
 
-    pickle.dump(returns, open('SA_sobol.p', 'wb'))
-    pickle.dump(param_values, open('Par_sobol.p', 'wb'))
+    pickle.dump(returns, open('pickles\\SA_sobol.p', 'wb'))
+    pickle.dump(param_values, open('pickles\\Par_sobol.p', 'wb'))

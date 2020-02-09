@@ -32,7 +32,7 @@ _string = ['av_degree', 'mut_prop', 'clustering_coefficient', 'segreg_ind2', 'se
 
 
 # Uncertainty analysis
-data = pickle.load(open('100xschool4.pkl', 'rb'))
+data = pickle.load(open('pickles\\100xschool4.pkl', 'rb'))
 
 fig = plt.figure()
 plt.boxplot(data.values(), labels=[label[i] for i in _string])
@@ -45,8 +45,8 @@ plt.tight_layout()
 fig.savefig('UA_plot.png')
 
 # Experiment
-extraruns = pickle.load(open('100xschool4extra.pkl', 'rb'))
-normalruns = pickle.load(open('100xschool4.pkl', 'rb'))
+extraruns = pickle.load(open('pickles\\100xschool4extra.pkl', 'rb'))
+normalruns = pickle.load(open('pickles\\100xschool4.pkl', 'rb'))
 
 fig = plt.figure()
 plt.boxplot([normalruns['segreg_ind0'], extraruns['segreg_ind0'],
@@ -61,8 +61,8 @@ fig.savefig('ExtraChar.png')
 
 
 # SOBOL
-data = pickle.load(open('SA_sobol.p', 'rb'))
-para = pickle.load(open('Par_sobol.p', 'rb'))
+data = pickle.load(open('pickles\\SA_sobol.p', 'rb'))
+para = pickle.load(open('pickles\\Par_sobol.p', 'rb'))
 ind, Y = zip(*data)
 
 for num in range(len(_string)) :

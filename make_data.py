@@ -11,7 +11,7 @@ extraruns = {'av_degree':[], 'clustering_coefficient':[], 'mut_prop':[],
 
 # 100 normal runs
 data = model.main(settings, [4] * 100)
-pickle.dump(data, open('100xschool4.pkl', 'wb'))
+pickle.dump(data, open('pickles\\100xschool4.pkl', 'wb'))
 
 # 100 runs with extra X column
 for i in range(100):
@@ -25,4 +25,4 @@ for i in range(100):
     for s in _string:
         extraruns[s].append(new_data[s][0])
 
-pickle.dump(extraruns, open('100xschool4extra.pkl', 'wb'))
+pickle.dump(extraruns, open('pickles\\100xschool4extra.pkl', 'wb'))
